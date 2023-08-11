@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome to {{ team_name }}</h1>
+        <h2>{{ your_name }}</h2>
+        <img class="profile-photo" src="{{ url_for('static', filename=profile_photo) }}" alt="Profile Photo">
+        <a href="{{ url_for('product_list') }}">View Products</a> 
+    </div>
+</body>
+</html>
